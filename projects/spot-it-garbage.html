@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Portfolio - Projects</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/github_profile_icon.ico"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* * {box-sizing: border-box;} */
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.1;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.1;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="../index.html#projects" class="title">Projects</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../index.html#experience">Experience</a>
+          </li>
+          <li><a href="../index.html#projects" class="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <h1 class="major">
+            <a href="https://github.com/jojo20872/Spot_It_Garbage">
+              <span class="solid icon brands fa-github"></span
+            ></a>
+            Spot-It Garbage
+          </h1>
+          <!-- Slideshow -->
+          <div class="slideshow-container">
+            <div class="mySlides fade center" style="text-align: center;">
+              <img height="520" src="../images/spg-1.jpg" />
+              <p>
+                Home screen of the application: Google Maps API and button to
+                report a complaint
+              </p>
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+              <img height="520" src="../images/spg-2.jpg" />
+              <p>
+                Submission form: user can photograph waste, add description, and
+                rate its messiness
+              </p>
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+              <img height="520" src="../images/spg-3.jpg" />
+              <p>Sample image of waste that needs to be cleaned up</p>
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+              <img height="520" src="../images/spg-4.jpg" />
+              <p>
+                Once photograph is taken, icon of image is displayed on
+                submission form
+              </p>
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+              <img height="520" src="../images/spg-5.jpg" />
+              <p>
+                Upon submission, complaint is recorded on home screen with a
+                marker at its location
+              </p>
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+              <img height="520" src="../images/spg-6.jpg" />
+              <p>Marker enables users to see complaint made at the location</p>
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+              <img height="520" src="../images/spg-7.jpg" />
+              <p>Sample image of waste is viewable on marker</p>
+            </div>
+          </div>
+          <hr />
+          <!-- Purpose -->
+          <h2>Purpose</h2>
+          <p>
+            Spot-It Garbage is an <strong>Android</strong> app which allows
+            users to pin a location with litter/waste on a
+            <strong>Google Maps</strong> display and submit details about the
+            site like pictures, its challenge for removal, and a link to a group
+            chat to organize a cleanup. Other users can then view these pins and
+            click on them to see details and join the cleanup via the group
+            chat. The app is based off the principle of
+            <strong>crowd-sourcing</strong> and social media, allowing users to
+            easily define areas in need of waste management and to recruit help
+            from volunteers.
+          </p>
+          <hr />
+          <!-- How It Works -->
+          <h2>How It Works</h2>
+          <ul>
+            <li>
+              Spot-It Garbage is a native <strong>Android</strong> app written
+              in <strong>Java</strong> with access to
+              <strong>Realtime Database</strong> and
+              <strong>
+                Cloud Storage
+              </strong>
+              using <strong>Google's Firebase</strong>
+            </li>
+            <li>
+              Individual users are able to pin garbage locations and through
+              using <strong>Firebase's Realtime Database</strong>, these markers
+              are publicly visible
+            </li>
+            <li>
+              Relies on the <strong>Google Maps API</strong> to provide the
+              front end experience (displaying the map, finding location,
+              placing markers, etc.)
+            </li>
+          </ul>
+          <hr />
+          <!-- More Information -->
+          <h2>More Information</h2>
+          <p>
+            Spot-It Garbage was submitted to HackUMBC 2019. The submission can
+            be found
+            <a href="https://devpost.com/software/spot-it-garbage">here</a>.
+          </p>
+          <p>
+            Spot-It Garbage recieved an Honorable Mention at the U21 RISE
+            Competition from the University of Maryland, College Park's Do Good
+            Institute and the Office of International Affairs (October 2019).
+          </p>
+          <hr />
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

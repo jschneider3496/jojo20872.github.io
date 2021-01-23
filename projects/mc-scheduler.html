@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Portfolio - Projects</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/github_profile_icon.ico"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* * {box-sizing: border-box;} */
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.1;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.1;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="../index.html#projects" class="title">Projects</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../index.html#experience">Experience</a>
+          </li>
+          <li><a href="../index.html#projects" class="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <h1 class="major">
+            <a href="https://github.com/jojo20872/MC-Schedule-Builder">
+              <span class="solid icon brands fa-github"></span></a
+            > MC Scheduler
+          </h1>
+          <!-- Slideshow -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <span class="image fit"><img src="../images/mc-home.PNG" /></span>
+            </div>
+            <div class="mySlides fade">
+              <span class="image fit"
+                ><img src="../images/mc-scheduler.PNG"
+              /></span>
+            </div>
+          </div>
+          <hr />
+          <!-- Purpose -->
+          <h2>Purpose</h2>
+          <p>
+            A course schedule planning tool for Montgomery College students,
+            enabling easy development of a schedule that fits their needs.
+          </p>
+          <hr />
+          <!-- Features -->
+          <h2>Features</h2>
+          <ul>
+            <li>
+              Create a new schedule from scratch or select from a pre-existing
+              schedule
+            </li>
+            <li>
+              <strong>Easy to use UI</strong> focused on keeping schedule making
+              simple
+            </li>
+            <li>
+              Suggestive events <strong>visualizing</strong> potential time of
+              classes and time conflicts
+            </li>
+            <li>
+              <strong>Up-to-date</strong> course information obtained directly
+              from MC's catalog
+            </li>
+          </ul>
+          <hr />
+          <!-- How It Works -->
+          <h2>How It Works</h2>
+          <div class="row">
+            <div class="col-4 col-12-small">
+              <h3>Data Collection</h3>
+              <p>
+                Montgomery College course catalog is webscraped by using
+                <strong>Python’s Selenium and BS4</strong> packages. This data
+                is stored as a <strong>JSON</strong> file.
+              </p>
+            </div>
+            <div class="col-4 col-12-small">
+              <h3>Front End</h3>
+              <p>
+                The web-application uses the
+                <strong>Vue JavaScript framework</strong>, as well as
+                <strong>Vuetify</strong> and
+                <strong>BootStrapVue</strong> componenets. Particularly, the
+                visual display of the schedule is performed through
+                <strong>Vuetify's</strong>
+                calendar component.
+              </p>
+            </div>
+            <div class="col-4 col-12-small">
+              <h3>Back End</h3>
+              <p>
+                Connecting to the front end by using
+                <strong>axios AJAX</strong> requests, the
+                <strong>Python</strong>-based back end runs on
+                <strong>Flask and Flask Cors</strong>. Data is stored as
+                <strong>JSON</strong> and accessed as
+                <strong>Python</strong> objects.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <!-- More Information -->
+          <h2>More Information</h2>
+          <p>Watch this video for a more in-depth demo of MC Scheduler</p>
+          <iframe
+            src="https://www.youtube.com/embed/GysXWyvl6II"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <hr />
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
